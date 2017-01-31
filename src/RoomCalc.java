@@ -19,30 +19,32 @@ public class RoomCalc {
 
         while (userInput.equals("Yes")) {
 
-        //3. this is where we ask user for input for RoomCalc
-        System.out.print("Please enter length of classroom: ");
-        double length = scan.nextDouble();
+            //3. this is where we ask user for input for RoomCalc
+            System.out.print("Please enter length of classroom: ");
+            double length = scan.nextDouble();
 
-        System.out.print("Please enter width of classroom: ");
-        double width = scan.nextDouble();
+            System.out.print("Please enter width of classroom: ");
+            double width = scan.nextDouble();
 
-        //4. this is where the imput computes, put in by the user.
-        double perimeter = 2 * length + 2 * width;
+            //4. this is where the imput computes, put in by the user.
+            double perimeter = 2 * length + 2 * width;
 
-        double area = length * width;
+            double area = length * width;
 
-        //5. results of the amounts put in will printout
-        System.out.println("The perimiter is " + perimeter);
+            //5. results of the amounts put in will printout
+            System.out.println("The perimiter is " + perimeter);
 
-        System.out.println("The area is " + area);
+            System.out.println("The area is " + area);
 
-        // Ask the user if they want to continue
-        System.out.println("Continue? (Yes / No) ");
+            // Ask the user if they want to continue
+            System.out.println("Continue? (Yes / No) must be entered exactly how it's written! ");
 
-        // Get response from user by using the Scanner
-            System.out.println("No problem, have a nice day");
-
+            // If userInput is Yes continue, if userInput is No Exit. Received by Scanner
+            userInput = scan.next();
         }
+
+        // Thank userInput for participation
+            System.out.println("No problem, have a nice day");
 
         //6. close out resources
         scan.close();
